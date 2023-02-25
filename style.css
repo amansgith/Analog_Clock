@@ -1,0 +1,92 @@
+body{
+    background-image: url(assets/back2.jpg) no-repeat;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    /* display: flex; */
+    margin: 0;
+    min-height: 100hv;
+}
+
+h1{
+    margin-top: 0;
+    font-size: 4rem;
+    color: white;
+    text-shadow:5px 0 rgb(87, 144, 3);
+    z-index: 10;
+    background: rgb(63,94,251);
+background: radial-gradient(circle, rgb(9, 160, 95) 0%, rgb(126, 220, 11) 100%);
+}
+
+.clock{
+    margin:50px auto;
+    width: 20rem;
+    height: 20rem;
+    padding: 2rem;
+    border: 10px solid rgb(87, 144, 3);
+    border-radius: 100%;
+    background: url(assets/clock.png);
+    position: relative;
+    box-shadow: 10px 10px 58px 3px rgba(0,0,0,0.75) inset;
+-webkit-box-shadow: 10px 10px 58px 3px rgba(0,0,0,0.75) inset;
+-moz-box-shadow: 10px 10px 58px 3px rgba(0,0,0,0.75) inset;
+    
+}
+
+.clock-face{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+    background-image: url(assets/clock.png) no-repeat;
+}
+
+.hand{
+    /* width: 50%;
+    height: 6px;
+    background: cyan;
+    position: absolute;
+    top: 50%;
+    border-radius: 40%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+
+.hour_hand{
+        /* background: #000;
+        height: 20%;
+        left: 48.75%;
+        
+        top: 30%;
+        transform-origin: 100%;
+        width: 2%; */
+    width: 1.8%;
+    height: 25%;
+    top: 25%;
+    left: 48.85%;
+    opacity: 0.8;
+    position: absolute;
+}
+
+.min_hand{
+    width: 1.6%;
+    height: 35%;
+    top: 16%;
+    left: 48.9%;
+    opacity: 0.8;
+}
+
+.sec_hand{
+    width: 1%;
+    height: 40%;
+    top: 11%;
+    left: 50%;
+    opacity: 0.8;
+}
+
+
